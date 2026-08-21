@@ -923,10 +923,10 @@
                 </div>
          
 
-<button onclick="openMapSelector()" class="capsule-waze" style="border:none; cursor:pointer; background:transparent;">
+<a href="https://maps.app.goo.gl/CgBBkrv9rJETSPFu8" target="_blank" class="capsule-waze">
     <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
     <span>التوجيه</span>
-</button>
+</a>
             </div>
         </div>
     </div>
@@ -1032,10 +1032,10 @@
                     <a href="#categories-section" class="smart-btn chamfered-btn primary" onclick="showToast('العودة إلى أعلى القائمة')">
                         <span> تصفح الفئات الرئيسية</span>
                     </a>
-<button onclick="openMapSelector()" class="smart-btn chamfered-btn" style="border:none; cursor:pointer;">
+<a href="https://maps.app.goo.gl/CgBBkrv9rJETSPFu8" target="_blank" class="smart-btn chamfered-btn" onclick="showToast('جاري فتح الخريطة...')">
     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="stroke: var(--primary-solid);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-    <span>تحديد الموقع والذهاب</span>
-</button>
+    <span>الذهاب عبر الخرائط</span>
+</a>
                 </div>
 
                 <div class="footer-location-badge">
@@ -1065,21 +1065,8 @@
             </div>
         </footer>
     </main>
-<!-- نافذة اختيار الخرائط -->
-<div id="mapModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); z-index:9999; justify-content:center; align-items:center;">
-    <div style="background:#fff; padding:20px; border-radius:15px; width:80%; max-width:300px; text-align:center;">
-        <h4 style="margin-bottom:20px;">اختر تطبيق الخرائط</h4>
-        <a href="https://maps.app.goo.gl/CgBBkrv9rJETSPFu8" target="_blank" style="display:block; padding:12px; margin-bottom:10px; background:#4285f4; color:#fff; border-radius:8px; text-decoration:none;">خرائط جوجل (Google Maps)</a>
-        <a href="waze://?ll=31.339247,34.821379&navigate=yes" style="display:block; padding:12px; background:#33ccff; color:#fff; border-radius:8px; text-decoration:none;">تطبيق ويز (Waze)</a>
-        <button onclick="document.getElementById('mapModal').style.display='none'" style="margin-top:15px; background:none; border:none; color:#666;">إلغاء</button>
-    </div>
-</div>
 
-<script>
-function openMapSelector() {
-    document.getElementById('mapModal').style.display = 'flex';
-}
-</script> 
+
     <script>
         const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
         function playTactileClickSound() {
