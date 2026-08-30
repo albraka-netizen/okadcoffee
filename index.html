@@ -607,7 +607,7 @@
             font-family: 'Cairo', sans-serif; font-size: 13px; font-weight: 700; color: #fff;
         }
 
-       .categories-grid-section {
+  .categories-grid-section {
     max-width: 1100px;
     margin: 40px auto 20px;
     padding: 0 16px;
@@ -722,14 +722,24 @@
 }
 
 .circle-icon-box svg {
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
+    max-width: 100%;
+    max-height: 100%;
     fill: none;
-    stroke: var(--primary-solid);
+    stroke: var(--primary-solid, #ffb340);
     stroke-width: 1.8;
     stroke-linecap: round;
     stroke-linejoin: round;
     filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
+    object-fit: contain;
+}
+
+/* حل خاص لأيقونات الكروسون والبوريكس الكثيفة التفاصيل أو الكبيرة */
+.circle-icon-box.compact-svg svg {
+    width: 16px;
+    height: 16px;
+    stroke-width: 1.5;
 }
 
 .category-circle-item h4 {
